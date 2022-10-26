@@ -4,46 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/x-icon" href="css/favicon.ico">
+    <link rel="icon" type="image/jpg" href="../sources/icono.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/styles.css">
     <title>Contacto</title>
 </head>
 <body>
-  <header>
-    <nav> 
-        <ul class="list-inline">
-            <li> 
-                <h1><a href="../index.html">Logo</a></h1>
-            </li>  
-            <li>
-                <a href="./productos.html">Productos</a>
-            </li>
-            <li>
-                <a href="./servicios.html">Servicios</a> 
-            </li>
-            <li>
-                <a href="./contacto_f.html">Contacto</a>
-            </li>
-        </ul>
-    </nav>
-</header> <br><br>  
+    <header class="header">
+        <a href="../index.html">
+            <img class="header__logo" src="../sources/Logo.png" alt="Logotipo">
+        </a>
+    </header> 
+    <!-- Logotipo -->
 
-<!-- formulario -->
-  <br><section class="box">
+    <div class="nav__background">
+        <nav class="navegacion contenedor">
+            <a class="navegacion__enlace" href="../index.html">Home</a>
+            <a class="navegacion__enlace" href="./servicios.html">Servicios</a>
+            <a class="navegacion__enlace" href="./productos.html">Productos</a>
+            <a class="navegacion__enlace navegacion__enlace--activo" href="./contacto_f.html">Contacto</a>
+        </nav>
+    </div> <!-- Navegacion -->
+
+
+
+
+
+  <br>
+  <section class="contact-form-container">
     <h1>Formulario de Contacto</h1>
-    <form action="https://studiopinus.com/recriei-uma-imagem-usando-so-css/">
-       <input type="text" placeholder="Nombre" class="input">
-      <input type="text" placeholder="Asunto" class="input2">
-      <input type="textbox" placeholder="Escriba su mensaje aqui.." class="textbox">
-      <br>
-      <button type="submit" class="enviar"> Enviar
-      </button>
-      <button type="reset" class="limpar"> Limpar </button>
-    </form>
-  <!-- formulario -->
-    
+    <div class="container">
+        <!-- formulario -->
+        <form id="contact" action="" method="post">
+            <fieldset>
+                <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Your Email Address" type="email" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
+            </fieldset>
+            <fieldset>
+                <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+            </fieldset>
+            <fieldset>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
+        </form>
+        <!-- formulario -->
+    </div>    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d26276.421402311153!2d-58.414367248481874!3d-34.590183613769604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scentro%20cultural%20near%20Recoleta%2C%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1sen!2ses!4v1666820539053!5m2!1sen!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </section>
-  <span></span>  
+
+  <footer class="footer">
+    <img class="footer__imagen" src="../sources/footer.png" alt="pie">
+    <h4>© Copyright Barbería de Los Pelos - 2022</h4>
+        
+</footer> <!-- Footer -->
 
 </body>
 </html>

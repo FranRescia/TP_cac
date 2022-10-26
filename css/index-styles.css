@@ -19,6 +19,12 @@ body{
     margin: 0;
 }
 
+header {
+    display: flex;
+    justify-content:center;
+    background-color: var(--primario);   
+}
+
 .header__logo{
     margin: 1rem 0;
     background-color: var(--primario);
@@ -98,29 +104,28 @@ a:hover{
     100% {margin-left: -200%;}
 }
 
-aside{
-    float: left;
-    position: relative;
-    top: 7rem;
-    left: 10rem;
+.info-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .tijeras{
     width: 13rem;
 }
 
-.section-index{
-    margin: 4rem auto 0;
+.section-index {
+    margin: 4rem 0 8rem 0;
     padding: 2rem 2rem;
     width: 40%;
     text-align: justify;
     background-color: #fff;
     border-radius: 5rem;
     box-shadow: 0 0.1rem 0.4rem rgb(0 0 0 / 30%);
-    transform: translate(8rem);
 }
 
-.info{
+.info {
     font-size: 1.7rem;
     margin: 0 auto;
     text-align: center;
@@ -128,12 +133,27 @@ aside{
     border-width: 0.2rem;
 }
 
-footer{
-    width: 100%;
-    padding: 2rem 0;
-    margin-top: 10rem;
-    background-color: #F6C12E;
-    
+h4 {
+    font-size: 1rem;
+    text-align: center;
+    color: var(--blanco);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer {
+    background-color: var(--negro);
+    margin-top: 2rem;
+    padding: 1rem 0;
+    position: relative;
+  }
+  
+.footer__imagen{
+display: block;
+margin: 0px auto; 
+} 
+
+.footer__texto{
+text-align: center;
 }
 
 .copyright{
@@ -150,7 +170,12 @@ footer{
     text-align: center;
 }
 
-@media only screen and (max-width:400px){
+@media only screen and (max-width:768px) {
+
+    .info-container {
+        flex-direction: column;
+    }    
+
     /* header{padding-bottom: 1rem;} */
     aside{
         position: static;
@@ -159,6 +184,7 @@ footer{
         justify-content: center;
         transform: translate(0,4rem);
     }
+
     .section-index{transform: translate(0,5rem);}
     .info{font-size: 1rem;}
     p{font-size: 70%;}
